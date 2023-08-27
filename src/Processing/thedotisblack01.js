@@ -54,7 +54,6 @@ const TDIB01 = () => {
         return myP5.remove;
     }, [])
 
-
     return (
         <div ref={p5Ref} />
     )
