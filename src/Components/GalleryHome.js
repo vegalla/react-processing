@@ -7,27 +7,29 @@ import static03 from '../Assets/03.png';
 
 import styles from './GalleryHome.module.css';
 
+import DisplayItem from '../UI/DisplayItem';
+
 const GalleryHome = () => {
     return (
         <div className={styles.DisplayZone}>
-            <div className={styles.DisplayItem}>
-                <span>
-                    <img className={styles.Thumbnail} src={static01} />
-                    <Link to="/01">GENERATIVE CIRCLE</Link>
-                </span>
-            </div>
-            <div className={styles.DisplayItem}>
-                <span>
-                    <img className={styles.Thumbnail} src={static02}/>
-                    <Link to="/02">GRID</Link>
-                </span>
-            </div>
-            <div className={styles.DisplayItem}>
-                <span>
-                    <img className={styles.Thumbnail} src={static03}/>
-                    <Link to="/03">VERA MOLNAR ALGORITHM</Link>
-                </span>
-            </div>
+            <DisplayItem
+                image={static01}
+                path="/01"
+                label="GENERATIVE CIRCLE"
+                tags="thedotisblack"
+            />
+            <DisplayItem
+                image={static02}
+                path="/02"
+                label="GRID"
+                tags="thedotisblack"
+            />
+            <DisplayItem
+                image={static03}
+                path="/03"
+                label="VERA MOLNAR ALGORITHM"
+                tags="thedotisblack"
+            />
         </div>
     )
 };

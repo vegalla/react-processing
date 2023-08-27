@@ -35,7 +35,7 @@ function App() {
               header="VERA MOLNAR ALGORITHM"
               process={TDIB03}
               hyperlink="https://www.youtube.com/watch?v=O5G4SoWBoao&list=PLbLdd1fdNg5zPBMYYZLO2JVqMrBkK5Lux&index=7"
-              description="Ep.3 Processing tutorial | VERA MOLNAR"
+              description="Ep.3 Processing tutorial | VERA MOLNAR ALGORITHM"
             />
           } />
         </Route>
