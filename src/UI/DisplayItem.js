@@ -6,10 +6,14 @@ const DisplayItem = props => {
     return (
         <div className={styles.DisplayItem}>
             <span>
-                <img className={styles.Thumbnail} src={props.image} />
+                <img className={styles.Thumbnail} src={props.image} alt=""/>
                 <div className={styles.DisplayDescription}>
                     <Link to={props.path}>{props.label}</Link>
-                    <div className={styles.Tags}>{props.tags}</div>
+                    <br/>
+                    <span>
+                        <div className={styles.Tags}>{props.tags}</div>
+                        <div className={styles.Date}>Last Modified: {props.date}</div>
+                    </span>
                 </div>
             </span>
         </div>

@@ -1,7 +1,14 @@
 .Page {
     text-align: center;
+    background-color: #EDEAE5;
+    
 }
 
 .Header {
     font-size: 28px;
+    margin-top: 15px;
   }
+
+.Description {
+    padding: 28px;
+}

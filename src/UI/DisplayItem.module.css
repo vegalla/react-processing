@@ -10,12 +10,27 @@
 }
 
 .DisplayDescription {
+    /* border: red dotted; */
     display: inline-block;
+    margin-left: 13px;
+
+    width: calc(100% - 3% - 100px - 13px)
 }
 
 
 .Tags {
+    /* border: red dotted; */
+    display: inline-block;
     font-size: 12px;
+    color: grey;
+}
+
+.Date {
+    /* border: red dotted; */
+    display: inline-block;
+    float: right;
+    font-size: 12px;
+    color: grey;
 }
 
 .Thumbnail {

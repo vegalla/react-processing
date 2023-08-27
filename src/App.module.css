@@ -1,7 +1,6 @@
-.App {
-  text-align: center;
-}
-
-.Header {
-  font-size: 28px;
+.Background {
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    background-color: #EDEAE5;
 }

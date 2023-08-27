@@ -1,10 +1,16 @@
+.Header {
+    text-align: center;
+}
+
 .DisplayZone {
     border: red dotted;
 
     position: absolute;
     left: 5%;
     width: 90%;
-    height: 95%;
+    height: 80%;
+
+    overflow: auto;
 }
 
 .DisplayItem {
