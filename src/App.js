@@ -6,6 +6,7 @@ import GalleryPage from './Components/GalleryPage';
 
 import TDIB01 from './Processing/thedotisblack01';
 import TDIB02 from './Processing/thedotisblack02';
+import TDIB03 from './Processing/thedotisblack03';
 
 function App() {
   return (
@@ -27,6 +28,14 @@ function App() {
               process={TDIB02}
               hyperlink="https://www.youtube.com/watch?v=1dPFgWT2Aio&list=PLbLdd1fdNg5zPBMYYZLO2JVqMrBkK5Lux&index=6"
               description="Ep.2 Processing tutorial | GRID"
+            />
+          } />
+          <Route path="03" element={
+            <GalleryPage
+              header="VERA MOLNAR ALGORITHM"
+              process={TDIB03}
+              hyperlink="https://www.youtube.com/watch?v=O5G4SoWBoao&list=PLbLdd1fdNg5zPBMYYZLO2JVqMrBkK5Lux&index=7"
+              description="Ep.3 Processing tutorial | VERA MOLNAR"
             />
           } />
         </Route>

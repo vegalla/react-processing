@@ -9,17 +9,13 @@ const TDIB03 = () => {
 
     const Sketch = (p5) => {
 
-        let colArray = [];
-
         let margin = 100;
         let grid = 100;
 
         p5.setup = () => {
             p5.createCanvas(800, 800);
             p5.noLoop();
-            for (let c = 0; c < 7; c++) {
-                colArray.push(p5.color(getRandomInt(0, 255), getRandomInt(0, 255), getRandomInt(0, 255)));
-            }
+
         }
 
         p5.draw = () => {
@@ -29,13 +25,19 @@ const TDIB03 = () => {
 
             let d = 60;
 
-            for (let i = margin; i < p5.width - margin; i += grid) {
-                for (let j = margin; j < p5.height - margin; j += grid) {
+            let colArray = [];
+
+            for (let c = 0; c < 7; c++) {
+                colArray.push(p5.color(getRandomInt(0, 255), getRandomInt(0, 255), getRandomInt(0, 255)));
+            }
+
+            for (let i = margin; i < p5.width; i += grid) {
+                for (let j = margin; j < p5.height; j += grid) {
 
                     let colArrayNum = getRandomInt(0, 7);
                     p5.stroke(colArray[colArrayNum]);
                     p5.strokeWeight(3);
-                    for (let k = 0; k < 5; k++) {
+                    for (let k = 0; k < 3; k++) {
                         let x1 = -getRandomInt(0, d);
                         let y1 = -getRandomInt(0, d);
                         let x2 = getRandomInt(0, d);
@@ -53,6 +55,10 @@ const TDIB03 = () => {
                 }
             }
         }
+
+        p5.mouseClicked = () => {
+            p5.redraw();
+        };
     }
 
     useEffect(() => {
