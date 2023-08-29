@@ -4,6 +4,7 @@ import static01 from '../Assets/01.png';
 import static02 from '../Assets/02.png';
 import static03 from '../Assets/03.png';
 import static04 from '../Assets/04.png';
+import static05 from '../Assets/05.png';
 
 import styles from './GalleryHome.module.css';
 
@@ -15,7 +16,14 @@ const GalleryHome = () => {
             <div className={styles.Header}>
                 <h1>generative art</h1>
             </div>
-            <div className={styles.DisplayZone}> 
+            <div className={styles.DisplayZone}>
+                <DisplayItem
+                    image={static05}
+                    path="/05"
+                    label="ROTATE + SCALE"
+                    tags="thedotisblack"
+                    date="2023/08/28"
+                />
                 <DisplayItem
                     image={static04}
                     path="/04"
