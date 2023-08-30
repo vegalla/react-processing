@@ -3,7 +3,7 @@
 }
 
 .DisplayZone {
-    border: red dotted;
+    /* border: red dotted; */
 
     position: absolute;
     left: 5%;
