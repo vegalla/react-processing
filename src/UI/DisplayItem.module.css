@@ -1,5 +1,5 @@
 .DisplayItem {
-    border: red dotted;
+    /* border: red dotted; */
 
     position: relative;
     margin: 11px;
@@ -7,16 +7,28 @@
     /* display: flex;
     justify-content: left; */
 
+    box-shadow: 2px 2px grey;
+
+}
+
+.DisplayItem:hover {
+    background-color: lightsalmon;
 }
 
 .DisplayDescription {
     /* border: red dotted; */
     display: inline-block;
+    vertical-align: top;
+    padding-top: 50px;
     margin-left: 13px;
 
-    width: calc(100% - 3% - 100px - 13px)
+    width: calc(100% - 3% - 100px - 13px);
+
 }
 
+.DescriptionText {
+    margin: 0px;
+}
 
 .Tags {
     /* border: red dotted; */
@@ -34,5 +46,6 @@
 }
 
 .Thumbnail {
-    max-width: 100px;
+    max-width: 90px;
+    padding: 10px;
 }

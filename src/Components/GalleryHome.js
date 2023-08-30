@@ -10,8 +10,10 @@ import static06 from '../Assets/06.png';
 import styles from './GalleryHome.module.css';
 
 import DisplayItem from '../UI/DisplayItem';
+import { TAGS } from "./GALLERY_HOME_CONFIG";
 
 const GalleryHome = () => {
+    console.log({TAGS})
     return (
         <>
             <div className={styles.Header}>
@@ -22,42 +24,42 @@ const GalleryHome = () => {
                     image={static06}
                     path="/06"
                     label="OPTICAL ILLUSION | ROTATE + SCALE"
-                    tags="thedotisblack"
+                    tags={TAGS[0]}
                     date="2023/08/29"
                 />
                 <DisplayItem
                     image={static05}
                     path="/05"
                     label="ROTATE + SCALE"
-                    tags="thedotisblack"
+                    tags={TAGS[0]}
                     date="2023/08/28"
                 />
                 <DisplayItem
                     image={static04}
                     path="/04"
                     label="GRID WITH WHILE LOOP AND COLOR"
-                    tags="thedotisblack"
+                    tags={TAGS[0]}
                     date="2023/08/27"
                 />
                 <DisplayItem
                     image={static03}
                     path="/03"
                     label="VERA MOLNAR ALGORITHM"
-                    tags="thedotisblack"
+                    tags={TAGS[0]}
                     date="2023/08/26"
                 />
                 <DisplayItem
                     image={static02}
                     path="/02"
                     label="GRID"
-                    tags="thedotisblack"
+                    tags={TAGS[0]}
                     date="2023/08/25"
                 />
                 <DisplayItem
                     image={static01}
                     path="/01"
                     label="GENERATIVE CIRCLE"
-                    tags="thedotisblack"
+                    tags={TAGS[0]}
                     date="2023/08/25"
                 />
             </div>
