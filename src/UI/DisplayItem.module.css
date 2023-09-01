@@ -9,7 +9,19 @@
 
     box-shadow: 2px 2px grey;
 
+    /* animation: items-appear 1s ease-out forwards; */
 }
+
+/* @keyframes items-appear {
+    from {
+        opacity: 0;
+        transform: translateX(-3rem);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+} */
 
 .DisplayItem:hover {
     background-color: lightsalmon;
