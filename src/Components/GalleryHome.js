@@ -6,6 +6,7 @@ import static03 from '../Assets/03.png';
 import static04 from '../Assets/04.png';
 import static05 from '../Assets/05.png';
 import static06 from '../Assets/06.png';
+import static07 from '../Assets/07.png';
 
 import styles from './GalleryHome.module.css';
 
@@ -20,6 +21,13 @@ const GalleryHome = () => {
                 <h1>generative art</h1>
             </div>
             <div className={styles.DisplayZone}>
+                <DisplayItem
+                    image={static07}
+                    path="/07"
+                    label="NERVOUS RECTANGLE"
+                    tags={TAGS[0]}
+                    date="2023/08/31"
+                />
                 <DisplayItem
                     image={static06}
                     path="/06"

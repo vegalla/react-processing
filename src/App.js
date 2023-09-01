@@ -12,6 +12,7 @@ import TDIB03 from './Processing/thedotisblack03';
 import TDIB04 from './Processing/thedotisblack04';
 import TDIB05 from './Processing/thedotisblack05';
 import TDIB06 from './Processing/thedotisblack06';
+import TDIB07 from './Processing/thedotisblack07';
 
 function App() {
   return (
@@ -66,6 +67,14 @@ function App() {
                 process={TDIB06}
                 hyperlink="https://www.youtube.com/watch?v=zYgfVHKgfpY"
                 description="Ep.6 Processing art tutorial | Optical Illusion | ROTATE + SCALE"
+              />
+            } />
+            <Route path="07" element={
+              <GalleryPage
+                header="NERVOUS RECTANGLE"
+                process={TDIB07}
+                hyperlink="https://www.youtube.com/watch?v=ln9bF2QfP14"
+                description="Ep.7 Processing art tutorial | NERVOUS RECTANGLE | Random Walker"
               />
             } />
           </Route>
