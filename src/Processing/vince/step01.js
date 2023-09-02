@@ -9,6 +9,7 @@ const STEP01 = () => {
     const Sketch = (p5) => {
 
         let x, y;
+        let xi, yj;
         let dia = 20;
         let sw = 10;
 
@@ -22,14 +23,18 @@ const STEP01 = () => {
 
             x = p5.width / 2;
             y = p5.height / 2;
+
+            xi = 100;
+            yj = 100;
+
         }
 
         p5.draw = () => {
             p5.background('#eeeeee');
-            for (let i = -100; i < p5.width + 100; i += 200) {
-                for (let j = -100; j <p5.height + 100; j += 200) {
-                    p5.noStroke();
-                    // p5.strokeWeight(5);
+            for (let i = 100; i < p5.width + 100; i += 200) {
+                for (let j = 100; j < p5.height + 100; j += 200) {
+                    // p5.noStroke();
+                    p5.strokeWeight(5);
                     p5.fill(255);
                     // p5.fill(getRandomInt(0, 255), getRandomInt(0, 255), getRandomInt(0, 255));
                     p5.rectMode(p5.CENTER);
@@ -39,15 +44,15 @@ const STEP01 = () => {
                     // p5.rect(x, y, dia, dia);
                     p5.fill(0, 15, 30);
                     // p5.ellipseMode()
-                    p5.ellipse(x, y, dia, dia);
-                    x += getRandomInt(-6, 6);
-                    y += getRandomInt(-6, 6);
+                    p5.ellipse(xi, yj, dia, dia);
+                    xi += getRandomInt(-10, 10);
+                    yj += getRandomInt(-10, 10);
                     // console.log(i);
                     // console.log(j);
 
                     // p5.rect()
-                    x = p5.constrain(x, x/2 - dia, p5.width);
-                    y = p5.constrain(y, y/2 - dia, p5.height);
+                    xi = p5.constrain(xi, -100 + sw, 100 - sw);
+                    yj = p5.constrain(yj, -100 + sw, 100 - sw);
                     // console.log(x);
                     // console.log(y);
                     p5.pop();
