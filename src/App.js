@@ -6,13 +6,15 @@ import Layout from './Components/Layout';
 import GalleryHome from './Components/GalleryHome';
 import GalleryPage from './Components/GalleryPage';
 
-import TDIB01 from './Processing/thedotisblack01';
-import TDIB02 from './Processing/thedotisblack02';
-import TDIB03 from './Processing/thedotisblack03';
-import TDIB04 from './Processing/thedotisblack04';
-import TDIB05 from './Processing/thedotisblack05';
-import TDIB06 from './Processing/thedotisblack06';
-import TDIB07 from './Processing/thedotisblack07';
+import TDIB01 from './Processing/thedotisblack/thedotisblack01';
+import TDIB02 from './Processing/thedotisblack/thedotisblack02';
+import TDIB03 from './Processing/thedotisblack/thedotisblack03';
+import TDIB04 from './Processing/thedotisblack/thedotisblack04';
+import TDIB05 from './Processing/thedotisblack/thedotisblack05';
+import TDIB06 from './Processing/thedotisblack/thedotisblack06';
+import TDIB07 from './Processing/thedotisblack/thedotisblack07';
+
+import STEP01 from './Processing/vince/step01';
 
 function App() {
   return (
@@ -21,7 +23,7 @@ function App() {
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<GalleryHome />} />
-            <Route path="01" element={
+            <Route path="tdib-01" element={
               <GalleryPage
                 header="GENERATIVE CIRCLE"
                 process={TDIB01}
@@ -29,7 +31,7 @@ function App() {
                 description="Ep.1 Processing art tutorial | GENERATIVE CIRCLE with line and loop"
               />
             } />
-            <Route path="02" element={
+            <Route path="tdib-02" element={
               <GalleryPage
                 header="GRID"
                 process={TDIB02}
@@ -37,7 +39,7 @@ function App() {
                 description="Ep.2 Processing art tutorial | GRID"
               />
             } />
-            <Route path="03" element={
+            <Route path="tdib-03" element={
               <GalleryPage
                 header="VERA MOLNAR ALGORITHM"
                 process={TDIB03}
@@ -45,7 +47,7 @@ function App() {
                 description="Ep.3 Processing art tutorial | VERA MOLNAR ALGORITHM"
               />
             } />
-            <Route path="04" element={
+            <Route path="tdib-04" element={
               <GalleryPage
                 header="GRID WITH WHILE LOOP AND COLOR"
                 process={TDIB04}
@@ -53,7 +55,7 @@ function App() {
                 description="Ep.4 Processing art tutorial | GRID with while loop and color"
               />
             } />
-            <Route path="05" element={
+            <Route path="tdib-05" element={
               <GalleryPage
                 header="ROTATE + SCALE"
                 process={TDIB05}
@@ -61,7 +63,7 @@ function App() {
                 description="Ep.5 Processing art tutorial | ROTATE + SCALE"
               />
             } />
-            <Route path="06" element={
+            <Route path="tdib-06" element={
               <GalleryPage
                 header="OPTICAL ILLUSION | ROTATE + SCALE"
                 process={TDIB06}
@@ -69,7 +71,7 @@ function App() {
                 description="Ep.6 Processing art tutorial | Optical Illusion | ROTATE + SCALE"
               />
             } />
-            <Route path="07" element={
+            <Route path="tdib-07" element={
               <GalleryPage
                 header="NERVOUS RECTANGLE"
                 process={TDIB07}
@@ -78,6 +80,13 @@ function App() {
               />
             } />
           </Route>
+            <Route path="vince-01" element={
+              <GalleryPage
+                header="STEP 01 | GRID + NERVOUS CIRCLE"
+                process={STEP01}
+                description="Step 1"
+              />
+            } />
         </Routes>
       </BrowserRouter>
     </div>

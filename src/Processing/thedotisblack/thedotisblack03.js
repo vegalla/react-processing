@@ -1,7 +1,7 @@
 import React, { useEffect } from 'react';
 import p5 from 'p5';
 
-import getRandomInt from '../Functions/getRandomInt';
+import getRandomInt from '../../Functions/getRandomInt';
 
 const TDIB03 = () => {
 

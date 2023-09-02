@@ -24,7 +24,14 @@ const GalleryHome = () => {
                 {/* <div className={styles.Appear0}> */}
                 <DisplayItem
                     image={static07}
-                    path="/07"
+                    path="/vince-01"
+                    label="GRID | NERVOUS CIRCLE"
+                    tags={TAGS[1]}
+                    date="2023/09/01"
+                />
+                <DisplayItem
+                    image={static07}
+                    path="/tdib-07"
                     label="NERVOUS RECTANGLE"
                     tags={TAGS[0]}
                     date="2023/08/31"
@@ -33,7 +40,7 @@ const GalleryHome = () => {
                 {/* <div className={styles.Appear1}> */}
                 <DisplayItem
                     image={static06}
-                    path="/06"
+                    path="/tdib-06"
                     label="OPTICAL ILLUSION | ROTATE + SCALE"
                     tags={TAGS[0]}
                     date="2023/08/29"
@@ -42,7 +49,7 @@ const GalleryHome = () => {
                 {/* <div className={styles.Appear2}> */}
                 <DisplayItem
                     image={static05}
-                    path="/05"
+                    path="/tdib-05"
                     label="ROTATE + SCALE"
                     tags={TAGS[0]}
                     date="2023/08/28"
@@ -51,7 +58,7 @@ const GalleryHome = () => {
                 {/* <div className={styles.Appear3}> */}
                 <DisplayItem
                     image={static04}
-                    path="/04"
+                    path="/tdib-04"
                     label="GRID WITH WHILE LOOP AND COLOR"
                     tags={TAGS[0]}
                     date="2023/08/27"
@@ -60,7 +67,7 @@ const GalleryHome = () => {
                 {/* <div className={styles.Appear4}> */}
                 <DisplayItem
                     image={static03}
-                    path="/03"
+                    path="/tdib-03"
                     label="VERA MOLNAR ALGORITHM"
                     tags={TAGS[0]}
                     date="2023/08/26"
@@ -69,14 +76,14 @@ const GalleryHome = () => {
                 {/* <div className={styles.Appear5} > */}
                 <DisplayItem
                     image={static02}
-                    path="/02"
+                    path="/tdib-02"
                     label="GRID"
                     tags={TAGS[0]}
                     date="2023/08/25"
                 />
                 <DisplayItem
                     image={static01}
-                    path="/01"
+                    path="/tdib-01"
                     label="GENERATIVE CIRCLE"
                     tags={TAGS[0]}
                     date="2023/08/25"

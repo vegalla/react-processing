@@ -9,8 +9,10 @@ const GalleryPage = props => {
             </div>
             {props.process()}
             <div className={styles.Description}>
-                adapted from <a href="https://www.youtube.com/@thedotisblack">thedotisblack</a><br />
-                <a href={props.hyperlink}>{props.description}</a>
+                <>
+                    {props.hyperlink && <><p>adapted from <a href="https://www.youtube.com/@thedotisblack">thedotisblack</a></p></>}
+                    <a href={props.hyperlink}>{props.description}</a>
+                </>
             </div>
         </div>
     )
