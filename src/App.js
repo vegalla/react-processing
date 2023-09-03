@@ -15,6 +15,7 @@ import TDIB06 from './Processing/thedotisblack/thedotisblack06';
 import TDIB07 from './Processing/thedotisblack/thedotisblack07';
 
 import STEP01 from './Processing/vince/step01';
+import STEP02 from './Processing/vince/step02';
 
 function App() {
   return (
@@ -80,13 +81,20 @@ function App() {
               />
             } />
           </Route>
-            <Route path="vince-01" element={
-              <GalleryPage
-                header="STEP 01 | GRID + NERVOUS CIRCLE"
-                process={STEP01}
-                description="Step 1"
-              />
-            } />
+          <Route path="vince-01" element={
+            <GalleryPage
+              header="STEP 01 | GRID + NERVOUS CIRCLE"
+              process={STEP01}
+              description="Step 1"
+            />
+          } />
+          <Route path="vince-02" element={
+            <GalleryPage
+              header="STEP 02 | EYE + NERVOUS CIRCLE"
+              process={STEP02}
+              description="Step 2"
+            />
+          } />
         </Routes>
       </BrowserRouter>
     </div>

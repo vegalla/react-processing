@@ -1,12 +1,16 @@
 import React from 'react';
 
-import static01 from '../Assets/01.png';
-import static02 from '../Assets/02.png';
-import static03 from '../Assets/03.png';
-import static04 from '../Assets/04.png';
-import static05 from '../Assets/05.png';
-import static06 from '../Assets/06.png';
-import static07 from '../Assets/07.png';
+import imgTdib01 from '../Assets/tdib/01.png';
+import imgTdib02 from '../Assets/tdib/02.png';
+import imgTdib03 from '../Assets/tdib/03.png';
+import imgTdib04 from '../Assets/tdib/04.png';
+import imgTdib05 from '../Assets/tdib/05.png';
+import imgTdib06 from '../Assets/tdib/06.png';
+import imgTdib07 from '../Assets/tdib/07.png';
+
+import imgVince01 from '../Assets/vince/01.png';
+import imgVince02 from '../Assets/vince/02.png';
+
 
 import styles from './GalleryHome.module.css';
 
@@ -23,14 +27,21 @@ const GalleryHome = () => {
             <div className={styles.DisplayZone}>
                 {/* <div className={styles.Appear0}> */}
                 <DisplayItem
-                    image={static07}
+                    image={imgVince02}
+                    path="/vince-02"
+                    label="EYE + NERVOUS CIRCLE"
+                    tags={TAGS[1]}
+                    date="2023/09/02"
+                />
+                <DisplayItem
+                    image={imgVince01}
                     path="/vince-01"
-                    label="GRID | NERVOUS CIRCLE"
+                    label="GRID + NERVOUS CIRCLE"
                     tags={TAGS[1]}
                     date="2023/09/01"
                 />
                 <DisplayItem
-                    image={static07}
+                    image={imgTdib07}
                     path="/tdib-07"
                     label="NERVOUS RECTANGLE"
                     tags={TAGS[0]}
@@ -39,7 +50,7 @@ const GalleryHome = () => {
                 {/* </div> */}
                 {/* <div className={styles.Appear1}> */}
                 <DisplayItem
-                    image={static06}
+                    image={imgTdib06}
                     path="/tdib-06"
                     label="OPTICAL ILLUSION | ROTATE + SCALE"
                     tags={TAGS[0]}
@@ -48,7 +59,7 @@ const GalleryHome = () => {
                 {/* </div> */}
                 {/* <div className={styles.Appear2}> */}
                 <DisplayItem
-                    image={static05}
+                    image={imgTdib05}
                     path="/tdib-05"
                     label="ROTATE + SCALE"
                     tags={TAGS[0]}
@@ -57,7 +68,7 @@ const GalleryHome = () => {
                 {/* </div> */}
                 {/* <div className={styles.Appear3}> */}
                 <DisplayItem
-                    image={static04}
+                    image={imgTdib04}
                     path="/tdib-04"
                     label="GRID WITH WHILE LOOP AND COLOR"
                     tags={TAGS[0]}
@@ -66,7 +77,7 @@ const GalleryHome = () => {
                 {/* </div> */}
                 {/* <div className={styles.Appear4}> */}
                 <DisplayItem
-                    image={static03}
+                    image={imgTdib03}
                     path="/tdib-03"
                     label="VERA MOLNAR ALGORITHM"
                     tags={TAGS[0]}
@@ -75,14 +86,14 @@ const GalleryHome = () => {
                 {/* </div> */}
                 {/* <div className={styles.Appear5} > */}
                 <DisplayItem
-                    image={static02}
+                    image={imgTdib02}
                     path="/tdib-02"
                     label="GRID"
                     tags={TAGS[0]}
                     date="2023/08/25"
                 />
                 <DisplayItem
-                    image={static01}
+                    image={imgTdib01}
                     path="/tdib-01"
                     label="GENERATIVE CIRCLE"
                     tags={TAGS[0]}
