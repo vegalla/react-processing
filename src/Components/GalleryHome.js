@@ -7,6 +7,7 @@ import imgTdib04 from '../Assets/tdib/04.png';
 import imgTdib05 from '../Assets/tdib/05.png';
 import imgTdib06 from '../Assets/tdib/06.png';
 import imgTdib07 from '../Assets/tdib/07.png';
+import imgTdib08 from '../Assets/tdib/08.png';
 
 import imgVince01 from '../Assets/vince/01.png';
 import imgVince02 from '../Assets/vince/02.png';
@@ -26,6 +27,13 @@ const GalleryHome = () => {
             </div>
             <div className={styles.DisplayZone}>
                 {/* <div className={styles.Appear0}> */}
+                <DisplayItem
+                    image={imgTdib08}
+                    path="/tdib-08"
+                    label="RANDOM WALKER"
+                    tags={TAGS[0]}
+                    date="2023/09/03"
+                />
                 <DisplayItem
                     image={imgVince02}
                     path="/vince-02"

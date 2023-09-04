@@ -13,6 +13,7 @@ import TDIB04 from './Processing/thedotisblack/thedotisblack04';
 import TDIB05 from './Processing/thedotisblack/thedotisblack05';
 import TDIB06 from './Processing/thedotisblack/thedotisblack06';
 import TDIB07 from './Processing/thedotisblack/thedotisblack07';
+import TDIB08 from './Processing/thedotisblack/thedotisblack08';
 
 import STEP01 from './Processing/vince/step01';
 import STEP02 from './Processing/vince/step02';
@@ -93,6 +94,14 @@ function App() {
               header="STEP 02 | EYE + NERVOUS CIRCLE"
               process={STEP02}
               description="Step 2"
+            />
+          } />
+          <Route path="tdib-08" element={
+            <GalleryPage
+              header="RANDOM WALKER"
+              process={TDIB08}
+              hyperlink="https://www.youtube.com/watch?v=9ZL9qSag7CY&list=PLbLdd1fdNg5zPBMYYZLO2JVqMrBkK5Lux"
+              description="Ep.8 Processing art tutorial | Random Walker (Class) | Object-Oriented Programming"
             />
           } />
         </Routes>
