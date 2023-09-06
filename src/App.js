@@ -14,6 +14,7 @@ import TDIB05 from './Processing/thedotisblack/thedotisblack05';
 import TDIB06 from './Processing/thedotisblack/thedotisblack06';
 import TDIB07 from './Processing/thedotisblack/thedotisblack07';
 import TDIB08 from './Processing/thedotisblack/thedotisblack08';
+import TDIB09 from './Processing/thedotisblack/thedotisblack09';
 
 import STEP01 from './Processing/vince/step01';
 import STEP02 from './Processing/vince/step02';
@@ -29,7 +30,7 @@ function App() {
               <GalleryPage
                 header="GENERATIVE CIRCLE"
                 process={TDIB01}
-                hyperlink="https://www.youtube.com/watch?v=UZoVBMgzULk&list=PLbLdd1fdNg5zPBMYYZLO2JVqMrBkK5Lux&index=5"
+                hyperlink="https://www.youtube.com/watch?v=UZoVBMgzULk"
                 description="Ep.1 Processing art tutorial | GENERATIVE CIRCLE with line and loop"
               />
             } />
@@ -37,7 +38,7 @@ function App() {
               <GalleryPage
                 header="GRID"
                 process={TDIB02}
-                hyperlink="https://www.youtube.com/watch?v=1dPFgWT2Aio&list=PLbLdd1fdNg5zPBMYYZLO2JVqMrBkK5Lux&index=6"
+                hyperlink="https://www.youtube.com/watch?v=1dPFgWT2Aio"
                 description="Ep.2 Processing art tutorial | GRID"
               />
             } />
@@ -45,7 +46,7 @@ function App() {
               <GalleryPage
                 header="VERA MOLNAR ALGORITHM"
                 process={TDIB03}
-                hyperlink="https://www.youtube.com/watch?v=O5G4SoWBoao&list=PLbLdd1fdNg5zPBMYYZLO2JVqMrBkK5Lux&index=7"
+                hyperlink="https://www.youtube.com/watch?v=O5G4SoWBoao"
                 description="Ep.3 Processing art tutorial | VERA MOLNAR ALGORITHM"
               />
             } />
@@ -53,7 +54,7 @@ function App() {
               <GalleryPage
                 header="GRID WITH WHILE LOOP AND COLOR"
                 process={TDIB04}
-                hyperlink="https://www.youtube.com/watch?v=nYI5TOWXJEM&list=RDCMUCX4GSh1gpRuugPpjxu0gLmw&index=1"
+                hyperlink="https://www.youtube.com/watch?v=nYI5TOWXJEM"
                 description="Ep.4 Processing art tutorial | GRID with while loop and color"
               />
             } />
@@ -100,8 +101,16 @@ function App() {
             <GalleryPage
               header="RANDOM WALKER"
               process={TDIB08}
-              hyperlink="https://www.youtube.com/watch?v=9ZL9qSag7CY&list=PLbLdd1fdNg5zPBMYYZLO2JVqMrBkK5Lux"
+              hyperlink="https://www.youtube.com/watch?v=9ZL9qSag7CY"
               description="Ep.8 Processing art tutorial | Random Walker (Class) | Object-Oriented Programming"
+            />
+          } />
+          <Route path="tdib-09" element={
+            <GalleryPage
+              header="GRID + ROTATE/SCALE"
+              process={TDIB09}
+              hyperlink="https://www.youtube.com/watch?v=Y1D-0whVBac"
+              description="Ep.9 Processing 3D tutorial | Grid with rotateX, rotateY and scale"
             />
           } />
         </Routes>
