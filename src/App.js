@@ -1,4 +1,4 @@
-import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { BrowserRouter, HashRouter, Route, Routes } from 'react-router-dom';
 
 import styles from './App.module.css';
 
@@ -22,7 +22,7 @@ import STEP02 from './Processing/vince/step02';
 function App() {
   return (
     <div className={styles.Background}>
-      <BrowserRouter>
+      <HashRouter>
         <Routes>
           <Route path="/" element={<Layout />}>
             <Route index element={<GalleryHome />} />
@@ -114,7 +114,7 @@ function App() {
             />
           } />
         </Routes>
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 }
