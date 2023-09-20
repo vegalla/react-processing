@@ -94,7 +94,7 @@ const GalleryHome = () => {
                 {/* <div className={styles.Appear4}> */}
                 <DisplayItem
                     image={imgTdib03}
-                    path="/tdib-03"
+                    // path="/tdib-03"
                     label="VERA MOLNAR ALGORITHM"
                     tags={TAGS[0]}
                     date="2023/08/26"

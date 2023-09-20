@@ -1,6 +1,7 @@
-.Background {
+.background {
     position: absolute;
     height: 100%;
     width: 100%;
     background-color: #EDEAE5;
+    /* mr */
 }

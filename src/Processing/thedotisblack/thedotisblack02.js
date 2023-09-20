@@ -7,14 +7,18 @@ const TDIB02 = () => {
 
     const Sketch = (p5) => {
 
+        const p5Container = document.querySelector('#p5-container')
+        let w = p5Container.clientWidth;
+        let h = p5Container.clientHeight;
+
         p5.setup = () => {
-            p5.createCanvas(800, 800);
+            p5.createCanvas(w, h);
         }
 
         let sw;
         let alpha = 1;
         let yStep = 10;
-        let arcSize = 200;
+        let arcSize = w / 4;
 
         p5.draw = () => {
             p5.background(220);

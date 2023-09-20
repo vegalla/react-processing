@@ -8,6 +8,10 @@ const TDIB08 = () => {
 
     const Sketch = (p5) => {
 
+        const p5Container = document.querySelector('#p5-container')
+        let w = p5Container.clientWidth;
+        let h = p5Container.clientHeight;
+
         let rLine1;
         let rLine2;
         // let x1, y1, x2, y2;
@@ -17,7 +21,7 @@ const TDIB08 = () => {
         // let red;
 
         p5.setup = () => {
-            p5.createCanvas(800, 800);
+            p5.createCanvas(w, h);
             p5.background(255);
             p5.stroke(40);
             p5.strokeWeight(3);

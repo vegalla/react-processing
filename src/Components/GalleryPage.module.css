@@ -1,14 +1,35 @@
-.Page {
+.page {
+    border: dotted red;
     text-align: center;
     background-color: #EDEAE5;
+
+    max-width: 9in;
+    margin: auto;
     
 }
 
-.Header {
+.wrapper {
+    --width: 90vh;
+    border: red dotted;
+    max-width: 800px;
+    max-height: 800px;
+    margin: auto;
+    width: var(--width);
+    height: var(--width);
+}
+
+.header {
     font-size: 28px;
     margin-top: 15px;
   }
 
-.Description {
+.description {
     padding: 28px;
+}
+
+@media screen and (max-width: 531px) {
+    .wrapper {
+        max-width: 400px !important;
+        max-height: 400px !important;
+    }
 }

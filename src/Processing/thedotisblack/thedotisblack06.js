@@ -7,18 +7,21 @@ const TDIB06 = () => {
     const p5Ref = React.createRef();
 
     const Sketch = (p5) => {
+        const p5Container = document.querySelector('#p5-container')
+        let w = p5Container.clientWidth;
+        let h = p5Container.clientHeight;
 
         let angle = 0;
 
         p5.setup = () => {
-            p5.createCanvas(800, 800);
+            p5.createCanvas(w, h);
             p5.noStroke();
             p5.fill(0, 15, 30);
         }
 
         p5.draw = () => {
             p5.background(255);
-            p5.translate(p5.width / 2, p5.height / 2);
+            p5.translate(w / 2, h / 2);
             // p5.scale(2);
 
             let x = p5.width;

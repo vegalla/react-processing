@@ -6,11 +6,14 @@ const TDIB05 = () => {
     const p5Ref = React.createRef();
 
     const Sketch = (p5) => {
+        const p5Container = document.querySelector('#p5-container')
+        let w = p5Container.clientWidth;
+        let h = p5Container.clientHeight;
 
         let angle = 0;
 
         p5.setup = () => {
-            p5.createCanvas(800, 800);
+            p5.createCanvas(w, h);
             // p5.setLocation(957, 0);
             p5.rectMode(p5.CENTER);
             p5.stroke(0, 15, 30);

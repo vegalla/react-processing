@@ -8,17 +8,21 @@ const STEP02 = () => {
 
     const Sketch = (p5) => {
 
+        const p5Container = document.querySelector('#p5-container')
+        let w = p5Container.clientWidth;
+        let h = p5Container.clientHeight;
+
         let center;
         let cx, cy;
         let x1, y1, x2, y2;
         let dia;
 
         p5.setup = () => {
-            p5.createCanvas(800, 800);
+            p5.createCanvas(w, h);
 
-            center = (p5.width / 2 + p5.height / 2) / 2;
-            cx = p5.width / 2;
-            cy = p5.height / 2;
+            center = (w / 2 + h / 2) / 2;
+            cx = w / 2;
+            cy = h / 2;
         }
 
         p5.draw = () => {
@@ -26,8 +30,8 @@ const STEP02 = () => {
 
             x1 = 0;
             y1 = 0;
-            x2 = p5.width;
-            y2 = p5.height;
+            x2 = w;
+            y2 = h;
 
             dia = 80;
 

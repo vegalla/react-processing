@@ -8,12 +8,15 @@ const TDIB03 = () => {
     const p5Ref = React.createRef();
 
     const Sketch = (p5) => {
+        const p5Container = document.querySelector('#p5-container')
+        let w = p5Container.clientWidth;
+        let h = p5Container.clientHeight;
 
-        let margin = 100;
-        let grid = 100;
+        let margin = w/8;
+        let grid = h/8;
 
         p5.setup = () => {
-            p5.createCanvas(800, 800);
+            p5.createCanvas(w, h);
             p5.noLoop();
 
         }

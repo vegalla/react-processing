@@ -6,6 +6,9 @@ const TDIB04 = () => {
     const p5Ref = React.createRef();
 
     const Sketch = (p5) => {
+        const p5Container = document.querySelector('#p5-container')
+        let w = p5Container.clientWidth;
+        let h = p5Container.clientHeight;
 
         let num;
 
@@ -17,8 +20,8 @@ const TDIB04 = () => {
         let a2 = 0;
 
         p5.setup = () => {
-            p5.createCanvas(800, 800);
-            num = (p5.width / xStep) * (p5.height / yStep);
+            p5.createCanvas(w, h);
+            num = (w / xStep) * (h / yStep);
         }
 
         p5.draw = () => {

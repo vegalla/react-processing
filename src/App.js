@@ -21,7 +21,7 @@ import STEP02 from './Processing/vince/step02';
 
 function App() {
   return (
-    <div className={styles.Background}>
+    <div className={styles.background}>
       <HashRouter>
         <Routes>
           <Route path="/" element={<Layout />}>

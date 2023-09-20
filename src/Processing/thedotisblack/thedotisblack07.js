@@ -8,20 +8,25 @@ const TDIB07 = () => {
 
     const Sketch = (p5) => {
 
+        const p5Container = document.querySelector('#p5-container')
+        let w = p5Container.clientWidth;
+        let h = p5Container.clientHeight;
+console.log([w,h])
+
         let x, y;
-        let dia = 400;
+        let dia = w/2;
         let sw = 10;
 
         p5.setup = () => {
-            p5.createCanvas(800, 800);
+            p5.createCanvas(w, h);
             p5.rectMode(p5.CENTER);
             p5.noFill();
             p5.fill('#282828');
             p5.stroke('#282828');
             p5.strokeWeight(sw);
 
-            x = p5.width/2;
-            y = p5.height/2;
+            x = w/2;
+            y = h/2;
         }
 
         p5.draw = () => {

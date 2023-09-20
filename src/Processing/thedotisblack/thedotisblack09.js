@@ -1,13 +1,15 @@
 import React, { useEffect } from 'react';
 import p5 from 'p5';
 
-import getRandomInt from '../../Functions/getRandomInt';
-
 const TDIB09 = () => {
 
     const p5Ref = React.createRef();
 
     const Sketch = (p5) => {
+
+        const p5Container = document.querySelector('#p5-container')
+        let w = p5Container.clientWidth;
+        let h = p5Container.clientHeight;
 
         let grid = 100;
         let angle = 0;
@@ -15,14 +17,15 @@ const TDIB09 = () => {
         let mY = 100;
 
         p5.setup = () => {
-            p5.createCanvas(800, 800, p5.WEBGL);
+            let cnv = p5.createCanvas(w, h, p5.WEBGL);
+            cnv.parent(p5Container);
             p5.rectMode(p5.CENTER);
             p5.noStroke();
         }
 
         p5.draw = () => {
             p5.background(15, 20, 30);
-            p5.translate(-p5.width / 2, -p5.height / 2);
+            p5.translate(-w / 2, -h / 2);
 
             for (let i = mX + grid; i <= p5.width - mX; i += grid * 2) {
                 for (let j = mY + grid; j <= p5.height - mY; j += grid * 2) {
@@ -68,6 +71,10 @@ const TDIB09 = () => {
                     grid = 100
                 }
             }
+        }
+
+        p5.windowResized = () => {
+            p5.resizeCanvas(w , h);
         }
     }
 
