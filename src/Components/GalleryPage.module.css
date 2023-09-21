@@ -1,21 +1,24 @@
 .page {
-    border: dotted red;
+    /* border: dotted red; */
     text-align: center;
     background-color: #EDEAE5;
 
     max-width: 9in;
     margin: auto;
+    /* padding-left: 5px; */
+    /* padding-right: 5px; */
     
 }
 
 .wrapper {
-    --width: 90vh;
-    border: red dotted;
+    --width: 90vw;
+    /* border: red dotted; */
     max-width: 800px;
     max-height: 800px;
     margin: auto;
     width: var(--width);
     height: var(--width);
+    overflow: hidden;
 }
 
 .header {
@@ -29,7 +32,7 @@
 
 @media screen and (max-width: 531px) {
     .wrapper {
-        max-width: 400px !important;
-        max-height: 400px !important;
+        width: 95% !important;
+        /* height: 100% !important; */
     }
 }

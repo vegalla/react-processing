@@ -11,14 +11,20 @@ const TDIB09 = () => {
         let w = p5Container.clientWidth;
         let h = p5Container.clientHeight;
 
-        let grid = 100;
+        if (window.innerWidth < w) {
+            w = window.innerWidth;
+            h = window.innerWidth;
+            console.log([w, h])
+        }
+
+        let grid = w / 8;
         let angle = 0;
-        let mX = 100;
-        let mY = 100;
+        let mX = w / 8;
+        let mY = h / 8;
 
         p5.setup = () => {
             let cnv = p5.createCanvas(w, h, p5.WEBGL);
-            cnv.parent(p5Container);
+            // cnv.parent(p5Container);
             p5.rectMode(p5.CENTER);
             p5.noStroke();
         }
@@ -68,7 +74,7 @@ const TDIB09 = () => {
                 grid = grid / 2;
                 angle = 0;
                 if (grid <= 20) {
-                    grid = 100
+                    grid = w / 8
                 }
             }
         }
