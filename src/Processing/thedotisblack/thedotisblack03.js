@@ -37,7 +37,7 @@ const TDIB03 = () => {
             for (let i = margin; i < p5.width; i += grid) {
                 for (let j = margin; j < p5.height; j += grid) {
 
-                    let colArrayNum = getRandomInt(0, 7);
+                    let colArrayNum = getRandomInt(0, 6);
                     p5.stroke(colArray[colArrayNum]);
                     p5.strokeWeight(3);
                     for (let k = 0; k < 3; k++) {

@@ -27,7 +27,6 @@ const GalleryHome = () => {
                 <span>generative art</span>
             </div>
             <div className={styles.DisplayZone}>
-                {/* <div className={styles.Appear0}> */}
                 <DisplayItem
                     image={imgTdib09}
                     path="/tdib-09"
@@ -63,8 +62,6 @@ const GalleryHome = () => {
                     tags={TAGS[0]}
                     date="2023/08/31"
                 />
-                {/* </div> */}
-                {/* <div className={styles.Appear1}> */}
                 <DisplayItem
                     image={imgTdib06}
                     path="/tdib-06"
@@ -72,8 +69,6 @@ const GalleryHome = () => {
                     tags={TAGS[0]}
                     date="2023/08/29"
                 />
-                {/* </div> */}
-                {/* <div className={styles.Appear2}> */}
                 <DisplayItem
                     image={imgTdib05}
                     path="/tdib-05"
@@ -81,8 +76,6 @@ const GalleryHome = () => {
                     tags={TAGS[0]}
                     date="2023/08/28"
                 />
-                {/* </div> */}
-                {/* <div className={styles.Appear3}> */}
                 <DisplayItem
                     image={imgTdib04}
                     path="/tdib-04"
@@ -90,17 +83,13 @@ const GalleryHome = () => {
                     tags={TAGS[0]}
                     date="2023/08/27"
                 />
-                {/* </div> */}
-                {/* <div className={styles.Appear4}> */}
                 <DisplayItem
                     image={imgTdib03}
-                    // path="/tdib-03"
+                    path="/tdib-03"
                     label="VERA MOLNAR ALGORITHM"
                     tags={TAGS[0]}
-                    date="2023/08/26"
+                    date="2023/10/02"
                 />
-                {/* </div> */}
-                {/* <div className={styles.Appear5} > */}
                 <DisplayItem
                     image={imgTdib02}
                     path="/tdib-02"
@@ -115,7 +104,6 @@ const GalleryHome = () => {
                     tags={TAGS[0]}
                     date="2023/08/25"
                 />
-                {/* </div> */}
             </div >
         </>
     )

@@ -82,37 +82,38 @@ function App() {
                 description="Ep.7 Processing art tutorial | NERVOUS RECTANGLE | Random Walker"
               />
             } />
+            <Route path="vince-01" element={
+              <GalleryPage
+                header="STEP 01 | GRID + NERVOUS CIRCLE"
+                process={STEP01}
+                description="Step 1"
+              />
+            } />
+            <Route path="vince-02" element={
+              <GalleryPage
+                header="STEP 02 | EYE + NERVOUS CIRCLE"
+                process={STEP02}
+                description="Step 2"
+              />
+            } />
+            <Route path="tdib-08" element={
+              <GalleryPage
+                header="RANDOM WALKER"
+                process={TDIB08}
+                hyperlink="https://www.youtube.com/watch?v=9ZL9qSag7CY"
+                description="Ep.8 Processing art tutorial | Random Walker (Class) | Object-Oriented Programming"
+              />
+            } />
+            <Route path="tdib-09" element={
+              <GalleryPage
+                header="GRID + ROTATE/SCALE"
+                process={TDIB09}
+                hyperlink="https://www.youtube.com/watch?v=Y1D-0whVBac"
+                description="Ep.9 Processing 3D tutorial | Grid with rotateX, rotateY and scale"
+              />
+            } />
           </Route>
-          <Route path="vince-01" element={
-            <GalleryPage
-              header="STEP 01 | GRID + NERVOUS CIRCLE"
-              process={STEP01}
-              description="Step 1"
-            />
-          } />
-          <Route path="vince-02" element={
-            <GalleryPage
-              header="STEP 02 | EYE + NERVOUS CIRCLE"
-              process={STEP02}
-              description="Step 2"
-            />
-          } />
-          <Route path="tdib-08" element={
-            <GalleryPage
-              header="RANDOM WALKER"
-              process={TDIB08}
-              hyperlink="https://www.youtube.com/watch?v=9ZL9qSag7CY"
-              description="Ep.8 Processing art tutorial | Random Walker (Class) | Object-Oriented Programming"
-            />
-          } />
-          <Route path="tdib-09" element={
-            <GalleryPage
-              header="GRID + ROTATE/SCALE"
-              process={TDIB09}
-              hyperlink="https://www.youtube.com/watch?v=Y1D-0whVBac"
-              description="Ep.9 Processing 3D tutorial | Grid with rotateX, rotateY and scale"
-            />
-          } />
+
         </Routes>
       </HashRouter>
     </div>
