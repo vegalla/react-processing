@@ -11,10 +11,10 @@ const TDIB07 = () => {
         const p5Container = document.querySelector('#p5-container')
         let w = p5Container.clientWidth;
         let h = p5Container.clientHeight;
-console.log([w,h])
+        console.log([w, h])
 
         let x, y;
-        let dia = w/2;
+        let dia = w / 2;
         let sw = 10;
 
         p5.setup = () => {
@@ -25,8 +25,8 @@ console.log([w,h])
             p5.stroke('#282828');
             p5.strokeWeight(sw);
 
-            x = w/2;
-            y = h/2;
+            x = w / 2;
+            y = h / 2;
         }
 
         p5.draw = () => {

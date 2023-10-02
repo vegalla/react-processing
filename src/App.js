@@ -15,6 +15,7 @@ import TDIB06 from './Processing/thedotisblack/thedotisblack06';
 import TDIB07 from './Processing/thedotisblack/thedotisblack07';
 import TDIB08 from './Processing/thedotisblack/thedotisblack08';
 import TDIB09 from './Processing/thedotisblack/thedotisblack09';
+import TDIB10 from './Processing/thedotisblack/thedotisblack10';
 
 import STEP01 from './Processing/vince/step01';
 import STEP02 from './Processing/vince/step02';
@@ -110,6 +111,14 @@ function App() {
                 process={TDIB09}
                 hyperlink="https://www.youtube.com/watch?v=Y1D-0whVBac"
                 description="Ep.9 Processing 3D tutorial | Grid with rotateX, rotateY and scale"
+              />
+            } />
+            <Route path="tdib-10" element={
+              <GalleryPage
+                header="PERFECT LOOP with SINE & COSINE"
+                process={TDIB10}
+                hyperlink="https://www.youtube.com/watch?v=ehT7d9JPulQ"
+                description="Ep. 10 Processing art tutorial | Perfect Loop (1) with Sine and Cosine"
               />
             } />
           </Route>
