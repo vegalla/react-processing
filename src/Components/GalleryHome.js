@@ -10,6 +10,7 @@ import imgTdib07 from '../Assets/tdib/07.png';
 import imgTdib08 from '../Assets/tdib/08.png';
 import imgTdib09 from '../Assets/tdib/09.png';
 import imgTdib10 from '../Assets/tdib/10.png';
+import imgTdib12 from '../Assets/tdib/12.png';
 
 import imgVince01 from '../Assets/vince/01.png';
 import imgVince02 from '../Assets/vince/02.png';
@@ -28,6 +29,13 @@ const GalleryHome = () => {
                 <span>generative art</span>
             </div>
             <div className={styles.DisplayZone}>
+                <DisplayItem
+                    image={imgTdib12}
+                    path="tdib-12"
+                    label="GENERATIVE GRID DRAWINGS"
+                    tags={TAGS[0]}
+                    date="2023/10/02"
+                />
                 <DisplayItem
                     image={imgTdib10}
                     path="/tdib-10"
