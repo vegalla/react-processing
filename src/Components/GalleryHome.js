@@ -11,6 +11,7 @@ import imgTdib08 from '../Assets/tdib/08.png';
 import imgTdib09 from '../Assets/tdib/09.png';
 import imgTdib10 from '../Assets/tdib/10.png';
 import imgTdib12 from '../Assets/tdib/12.png';
+import imgTdib13 from '../Assets/tdib/12.png';
 
 import imgVince01 from '../Assets/vince/01.png';
 import imgVince02 from '../Assets/vince/02.png';
@@ -29,6 +30,13 @@ const GalleryHome = () => {
                 <span>generative art</span>
             </div>
             <div className={styles.DisplayZone}>
+                <DisplayItem
+                    image={imgTdib13}
+                    path="tdib-13"
+                    label="PERFECT FOR() LOOP"
+                    tags={TAGS[0]}
+                    date="2023/12/05"
+                />
                 <DisplayItem
                     image={imgTdib12}
                     path="tdib-12"

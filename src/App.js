@@ -17,6 +17,7 @@ import TDIB08 from './Processing/thedotisblack/thedotisblack08';
 import TDIB09 from './Processing/thedotisblack/thedotisblack09';
 import TDIB10 from './Processing/thedotisblack/thedotisblack10';
 import TDIB12 from './Processing/thedotisblack/thedotisblack12';
+import TDIB13 from './Processing/thedotisblack/thedotisblack13';
 
 import STEP01 from './Processing/vince/step01';
 import STEP02 from './Processing/vince/step02';
@@ -130,11 +131,18 @@ function App() {
                 description="Ep. 12 Processing art tutorial | Generative Grid Drawings"
               />
             } />
+            <Route path="tdib-13" element={
+              <GalleryPage
+                header="PERFECT FOR() LOOP | DISORDER and ORDER"
+                process={TDIB13}
+                hyperlink="https://www.youtube.com/watch?v=C-9Gl1HTCOw"
+                description="Ep. 13 Processing art tutorial | Perfect for() loop - Disorder and order"
+              />
+            } />
           </Route>
-
         </Routes>
       </HashRouter>
-    </div>
+    </div >
   );
 }
 
