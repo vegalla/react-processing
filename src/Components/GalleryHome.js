@@ -11,7 +11,7 @@ import imgTdib08 from '../Assets/tdib/08.png';
 import imgTdib09 from '../Assets/tdib/09.png';
 import imgTdib10 from '../Assets/tdib/10.png';
 import imgTdib12 from '../Assets/tdib/12.png';
-import imgTdib13 from '../Assets/tdib/12.png';
+import imgTdib13 from '../Assets/tdib/13.png';
 
 import imgVince01 from '../Assets/vince/01.png';
 import imgVince02 from '../Assets/vince/02.png';

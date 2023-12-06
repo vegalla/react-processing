@@ -35,7 +35,7 @@ const TDIB13 = () => {
 
                 p5.strokeWeight(3);
                 p5.line(0, y * p5.sin(p5.radians(a + angle)), x - dia / 2, 0);
-                p5.line(h / 3, y * p5.sin(p5.radians(a + angle)), x + dia / 2, 0);
+                p5.line(h , y * p5.sin(p5.radians(a + angle)), x + dia / 2, 0);
 
                 p5.noStroke();
                 p5.fill(0);
