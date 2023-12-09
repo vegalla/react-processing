@@ -18,6 +18,7 @@ import TDIB09 from './Processing/thedotisblack/thedotisblack09';
 import TDIB10 from './Processing/thedotisblack/thedotisblack10';
 import TDIB12 from './Processing/thedotisblack/thedotisblack12';
 import TDIB13 from './Processing/thedotisblack/thedotisblack13';
+import TDIB14 from './Processing/thedotisblack/thedotisblack14';
 
 import STEP01 from './Processing/vince/step01';
 import STEP02 from './Processing/vince/step02';
@@ -137,6 +138,14 @@ function App() {
                 process={TDIB13}
                 hyperlink="https://www.youtube.com/watch?v=C-9Gl1HTCOw"
                 description="Ep. 13 Processing art tutorial | Perfect for() loop - Disorder and order"
+              />
+            } />
+            <Route path="tdib-14" element={
+              <GalleryPage
+                header="LOOP OF HUES & ROUNDED RECTANGLES"
+                process={TDIB14}
+                hyperlink="https://www.youtube.com/watch?v=lyn-L9ELLxQ"
+                description="Ep. 14 Processing art tutorial | Loop of hues and rounded rectangles 1"
               />
             } />
           </Route>

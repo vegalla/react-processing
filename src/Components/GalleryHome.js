@@ -12,6 +12,7 @@ import imgTdib09 from '../Assets/tdib/09.png';
 import imgTdib10 from '../Assets/tdib/10.png';
 import imgTdib12 from '../Assets/tdib/12.png';
 import imgTdib13 from '../Assets/tdib/13.png';
+import imgTdib14 from '../Assets/tdib/14.png';
 
 import imgVince01 from '../Assets/vince/01.png';
 import imgVince02 from '../Assets/vince/02.png';
@@ -30,6 +31,13 @@ const GalleryHome = () => {
                 <span>generative art</span>
             </div>
             <div className={styles.DisplayZone}>
+                <DisplayItem
+                    image={imgTdib14}
+                    path="tdib-14"
+                    label="LOOP OF HUES & ROUNDED RECTANGLES 1"
+                    tags={TAGS[0]}
+                    date="2023/12/08"
+                />
                 <DisplayItem
                     image={imgTdib13}
                     path="tdib-13"
